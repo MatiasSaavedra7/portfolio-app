@@ -1,7 +1,8 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Github, Linkedin, Mail, ExternalLink, Download, MapPin, Calendar } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { Github, Linkedin, Mail, ExternalLink, Download, MapPin, Calendar, Eye } from "lucide-react"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -25,30 +26,24 @@ export default function Portfolio() {
 
   const projects = [
     {
+      id: "admin-dashboard",
+      title: "Admin Dashboard",
+      description: "Aplicación de administracion y gestion para un negocio de venta, alquiler, y servicio tecnico de maquinas impresoras, fotocopiadoras y multifuncion",
+      tech: ["Node.js", "Express.js", "Socket.io", "MySQL", "AdminLTE"],
+      github: "",
+      demo: "",
+      image: "/images/admin-dashboard/Inicio.png",
+    },
+    {
+      id: "",
       title: "VENNER E-commerce",
       description:
         "Plataforma de comercio electrónico completa con carrito de compras, pagos y panel de administración.",
       tech: ["Node.js", "Express.js", "React.js", "MySQL"],
-      github: "https://github.com/usuario/grupo_4_vinoteca",
-      demo: "#",
-      image: "/placeholder.svg?height=200&width=300",
+      github: "https://github.com/MatiasSaavedra7/grupo_4_vinoteca",
+      demo: "",
+      image: "/images/e-commerce/e-commerce.jpg",
     },
-    {
-      title: "Admin Dashboard",
-      description: "Aplicación de administracion y gestion para un negocio de venta, alquiler, y servicio tecnico de maquinas impresoras, fotocopiadoras y multifuncion",
-      tech: ["Node.js", "Express.js", "Socket.io", "MySQL", "AdminLTE"],
-      github: "#",
-      demo: "#",
-      image: "/placeholder.svg?height=200&width=300",
-    },
-    // {
-    //   title: "Weather Dashboard",
-    //   description: "Dashboard del clima con pronósticos detallados y visualizaciones interactivas.",
-    //   tech: ["Vue.js", "Chart.js", "OpenWeather API"],
-    //   github: "https://github.com/usuario/weather-dashboard",
-    //   demo: "https://weather-dashboard-demo.vercel.app",
-    //   image: "/placeholder.svg?height=200&width=300",
-    // },
   ]
 
   const experience = [
@@ -56,7 +51,7 @@ export default function Portfolio() {
       title: "Desarrollador Full Stack",
       company: "Freelance",
       period: "08/2024 - 02/2025",
-      description: "Desarrollo de aplicaciones web para la administracion de un negocio de ventas, alquiler, y service tecnico de maquinas impresoras, fotocopiadoras y multifuncion.",
+      description: "Desarrollo de aplicacion web para la administracion de un negocio de ventas, alquiler, y service tecnico de maquinas impresoras, fotocopiadoras y multifuncion.",
     },
     {
       title: "Desarrollador Full Stack",
@@ -68,39 +63,8 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto flex h-16 items-center px-4">
-          <div className="mr-4 flex">
-            <Link href="/" className="mr-6 flex items-center space-x-2">
-              <span className="font-bold text-xl">Mi Portfolio</span>
-            </Link>
-          </div>
-          <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-            <nav className="flex items-center space-x-6">
-              <Link
-                href="#about"
-                className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                Sobre mí
-              </Link>
-              <Link
-                href="#projects"
-                className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                Proyectos
-              </Link>
-              <Link
-                href="#contact"
-                className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                Contacto
-              </Link>
-              <ThemeToggle />
-            </nav>
-          </div>
-        </div>
-      </nav>
+      {/* Navbar */}
+      <Navbar />
 
       {/* Hero Section */}
       <section className="container px-4 py-24 mx-auto">
@@ -170,11 +134,11 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground">
-                Soy un desarrollador de software con 1 años de experiencia creando aplicaciones web modernas y
+                Soy un Desarrollador de Software con mas de un año de experiencia creando aplicaciones web modernas y
                 eficientes. Me encanta resolver problemas complejos y aprender nuevas tecnologías.
               </p>
               <p className="text-lg text-muted-foreground">
-                Mi enfoque está en crear experiencias de usuario excepcionales mientras mantengo código limpio y
+                Mi enfoque está en crear experiencias de usuario eficientes y atractivas, mientras mantengo código limpio y
                 escalable. Siempre busco las mejores prácticas y las últimas tendencias en desarrollo web.
               </p>
             </div>
@@ -251,18 +215,35 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="flex space-x-2">
-                    <Button variant="outline" size="sm" asChild>
-                      <Link href={project.github} target="_blank">
-                        <Github className="mr-1 h-4 w-4" />
-                        Código
-                      </Link>
-                    </Button>
-                    <Button size="sm" asChild>
-                      <Link href={project.demo} target="_blank">
-                        <ExternalLink className="mr-1 h-4 w-4" />
-                        Demo
-                      </Link>
-                    </Button>
+
+                    {/* Link al detalle del proyecto */}
+                    { project.id && (
+                      <Button variant="outline" size="sm" asChild className="bg-transparent">
+                        <Link href={`/projects/${project.id}`}>
+                          <Eye className="mr-1 h-4 w-4" /> Ver Detalles
+                        </Link>
+                      </Button>
+                    )}
+
+                    {/* Link al repositorio */}
+                    { project.github && (
+                      <Button variant="outline" size="sm" asChild>
+                        <Link href={project.github} target="_blank">
+                          <Github className="mr-1 h-4 w-4" />
+                          Código
+                        </Link>
+                      </Button>
+                    )}
+
+                    {/* Link al demo */}
+                    { project.demo && (
+                      <Button size="sm" asChild>
+                        <Link href={project.demo} target="_blank">
+                          <ExternalLink className="mr-1 h-4 w-4" />
+                          Demo
+                        </Link>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -296,13 +277,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8">
-        <div className="container px-4 mx-auto">
-          <div className="text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 Matias Saavedra. Todos los derechos reservados.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
