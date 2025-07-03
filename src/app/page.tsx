@@ -61,6 +61,24 @@ export default function Portfolio() {
     },
   ]
 
+  const education = [
+    {
+      degree: "Tecnico Universitario en Programacion",
+      institution: "Universidad Nacional de Santiago del Estero",
+      period: "2023 - Presente",
+      status: "En curso",
+      description: "Formacion de alto nivel tecnologico para desempeñarse en tareas que requieran la aplicacion de tecnicas para el desarrollo de software y ejecutar tareas inherentes a la implementacion y el mantenimiento del mismo.",
+
+    },
+    {
+      degree: "Desarrollador Full-Stack Node.js",
+      institution: "DigitalHouse",
+      period: "08/2023 - 04/2024",
+      status: "Finalizado",
+      description: "El curso de Programación Web Full Stack de Digital House te enseña a desarrollar sitios web completos, desde el frontend hasta el backend. Aprenderás HTML, CSS, JavaScript, React.js, bases de datos MySQL, Express.js y metodologías ágiles. Los objetivos incluyen dominar las bases de programación, comprender el ecosistema web, resolver problemas con autonomía y crear sitios web funcionales",
+    }
+  ]
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navbar */}
@@ -158,8 +176,51 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section id="education" className="container px-4 py-24 mx-auto bg-muted/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Educación</h2>
+
+          <div className="space-y-8">
+            {education.map((edu, index) => (
+              <Card key={index} className="bg-card overflow-hidden">
+                <CardHeader>
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div className="flex-1">
+                      <CardTitle className="text-xl">{edu.degree}</CardTitle>
+                      <CardDescription className="text-lg font-medium text-primary" style={{ color: 'hsl(var(--primary))' }}>
+                        {edu.institution}
+                      </CardDescription>
+                    </div>
+                    <div className="flex flex-col items-start md:items-end gap-2 md:min-w-[200px]">
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Calendar className="mr-1 h-4 w-4" />
+                        {edu.period}
+                      </div>
+                      <Badge
+                        variant={edu.status === "Finalizado" ? "default" : "secondary"}
+                        className={
+                          edu.status === "En curso"
+                            ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                            : ""
+                        }
+                      >
+                        {edu.status}
+                      </Badge>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{edu.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Experience Section */}
-      <section className="container px-4 py-24 mx-auto bg-muted/50">
+      <section id="experience" className="container px-4 py-24 mx-auto bg-muted/50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Experiencia</h2>
           <div className="space-y-8">
