@@ -44,6 +44,16 @@ export default function Portfolio() {
       demo: "",
       image: "/images/e-commerce/e-commerce.jpg",
     },
+    {
+      id: "",
+      title: "Next.js App Router",
+      description:
+        "Aplicacion web full-stack creada con Next.js",
+      tech: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+      github: "https://github.com/MatiasSaavedra7/nextjs-dashboard",
+      demo: "https://nextjs-dashboard-weld-one-3boa4gaukw.vercel.app/dashboard",
+      image: "/images/nextjs-dashboard/dashboard.avif",
+    },
   ]
 
   const experience = [
