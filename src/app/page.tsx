@@ -51,7 +51,7 @@ export default function Portfolio() {
         "Aplicacion web full-stack creada con Next.js",
       tech: ["Next.js", "Tailwind CSS", "PostgreSQL"],
       github: "https://github.com/MatiasSaavedra7/nextjs-dashboard",
-      demo: "https://nextjs-dashboard-weld-one-3boa4gaukw.vercel.app/dashboard",
+      demo: "https://nextjs-dashboard-weld-one-3boa4gaukw.vercel.app/",
       image: "/images/nextjs-dashboard/dashboard.avif",
     },
   ]
