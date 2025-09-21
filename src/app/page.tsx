@@ -132,7 +132,7 @@ export default function Portfolio() {
               asChild
               className="shadow-lg hover:shadow-xl transition-shadow bg-transparent"
             >
-              <Link href="/cv.pdf" target="_blank">
+              <Link href="/CV-MatiasSaavedra.pdf" target="_blank">
                 <Download className="mr-2 h-4 w-4" />
                 Descargar CV
               </Link>
