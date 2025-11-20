@@ -4,8 +4,8 @@ import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/image-carousel"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { ArrowLeft, Users, FilePen, Wrench, Smartphone } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { ArrowLeft, Check, FilePen, Smartphone, Users, Wrench } from "lucide-react"
 
 const carouselImages = [
   {
@@ -66,6 +66,23 @@ const carouselImages = [
   },
   
 ];
+
+const projectAchievements = [
+  "Diseñé y desarrollé una aplicación web integral para la gestión de alquileres y soporte técnico de equipos, optimizando procesos operativos del negocio.",
+  "Implementé módulos funcionales para el control de contratos, seguimiento de equipos y administración de ordenes de reparación.",
+  "Construí el back-end con Node.js + Express.js y MySQL como gestor de bases de datos, asegurando una arquitectura robusta y escalable.",
+  "Desarrollé el front-end con AdminLTE y JavaScript, priorizando la usabilidad y la eficiencia visual.",
+  "Integré herramientas específicas para el área de taller, incluyendo registro de averías, trazabilidad de reparaciones y gestión de insumos.",
+  "Incorporé autenticación basada en roles, paneles administrativos personalizados y visualización de métricas clave para la toma de decisiones.",
+  "Priorizando la experiencia de usuario, desarrollé una interfaz responsive que se adapta a distintos tipos de dispositivos, facilitando el acceso desde cualquier entorno operativo.",
+];
+
+const AchievementItem = ({ children }: { children: React.ReactNode }) => (
+  <li className="flex items-start gap-4">
+    <Check className="h-6 w-6 mt-1 flex-shrink-0 text-blue-500" />
+    <p className="text-muted-foreground">{children}</p>
+  </li>
+);
 
 export default function Dashboard() {
   return (
@@ -202,6 +219,22 @@ export default function Dashboard() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Responsabilidades y Logros
+          </h2>
+          <Card>
+            <CardContent className="p-6 sm:p-8">
+              <ul className="space-y-6">
+                {projectAchievements.map((achievement, index) => <AchievementItem key={index}>{achievement}</AchievementItem>)}
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
