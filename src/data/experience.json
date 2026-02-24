@@ -1,0 +1,44 @@
+[
+  {
+    "titleEs": "Desarrollador Full Stack",
+    "titleEn": "Full Stack Developer",
+    "company": "Rednor",
+    "periodEs": "Agosto 2024 – Marzo 2025",
+    "periodEn": "August 2024 – March 2025",
+    "bulletsEs": [
+      "Desarrollo de aplicación web integral (Node.js, Express, MySQL) para gestión de alquileres y soporte técnico, digitalizando procesos manuales.",
+      "Implementación de módulos de control de contratos y administración de órdenes de reparación.",
+      "Diseño de interfaz responsive para mejorar la usabilidad del personal técnico.",
+      "Desarrollo de sistema de autenticación RBAC y paneles de métricas gerenciales.",
+      "Optimización del control de stock mediante trazabilidad de insumos."
+    ],
+    "bulletsEn": [
+      "Developed a full-stack web application (Node.js, Express, MySQL) for rental and technical support management, digitalizing manual processes.",
+      "Implemented contract control and repair order management modules.",
+      "Designed a responsive interface to improve technical staff usability.",
+      "Developed RBAC authentication system and executive metrics dashboards.",
+      "Optimized stock control through supply traceability."
+    ],
+    "tech": ["Node.js", "Express.js", "MySQL", "Socket.IO", "JavaScript"]
+  },
+  {
+    "titleEs": "Desarrollador Full Stack",
+    "titleEn": "Full Stack Developer",
+    "company": "DigitalHouse",
+    "periodEs": "Agosto 2023 – Marzo 2024",
+    "periodEn": "August 2023 – March 2024",
+    "bulletsEs": [
+      "Desarrollo de aplicación E-commerce completa utilizando Node.js, Express.js y Sequelize.",
+      "Construcción de Dashboard administrativo con React consumiendo APIs REST propias.",
+      "Implementación de validaciones, carga de imágenes y persistencia de datos en MySQL.",
+      "Prototipado de interfaces en Figma previo a la implementación."
+    ],
+    "bulletsEn": [
+      "Developed a full E-commerce application using Node.js, Express.js, and Sequelize.",
+      "Built an admin dashboard with React consuming custom REST APIs.",
+      "Implemented validations, image uploads, and data persistence in MySQL.",
+      "Prototyped interfaces in Figma prior to implementation."
+    ],
+    "tech": ["Node.js", "Express.js", "React", "MySQL", "Sequelize", "Figma"]
+  }
+]

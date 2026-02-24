@@ -1,0 +1,27 @@
+[
+  {
+    "categoryEs": "Lenguajes",
+    "categoryEn": "Languages",
+    "tech": "Java, JavaScript (ES6+), TypeScript, Python, SQL"
+  },
+  {
+    "categoryEs": "Front-end",
+    "categoryEn": "Front-end",
+    "tech": "React, Next.js, Axios, TailwindCSS, Bootstrap, SCSS"
+  },
+  {
+    "categoryEs": "Back-end",
+    "categoryEn": "Back-end",
+    "tech": "Node.js (Express, NestJS), Spring Boot, Django, FastAPI"
+  },
+  {
+    "categoryEs": "Bases de Datos",
+    "categoryEn": "Databases",
+    "tech": "MySQL, PostgreSQL, MongoDB"
+  },
+  {
+    "categoryEs": "Herramientas",
+    "categoryEn": "Tools",
+    "tech": "Git, Docker, Postman, Jira, Figma"
+  }
+]

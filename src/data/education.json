@@ -1,0 +1,22 @@
+[
+  {
+    "degreeEs": "Programador Universitario en Informática",
+    "degreeEn": "University Programmer in Computer Science",
+    "institution": "Facultad de Ciencias Exactas y Tecnologías – UNSE",
+    "periodEs": "2023 – Presente",
+    "periodEn": "2023 – Present",
+    "status": "ongoing",
+    "descriptionEs": "Formación de alto nivel tecnológico para desempeñarse en tareas que requieran la aplicación de técnicas para el desarrollo de software y ejecutar tareas inherentes a la implementación y el mantenimiento del mismo.",
+    "descriptionEn": "High-level technological training to perform tasks requiring software development techniques, and to carry out tasks inherent to software implementation and maintenance."
+  },
+  {
+    "degreeEs": "Desarrollador Full-Stack Node.js",
+    "degreeEn": "Full-Stack Node.js Developer",
+    "institution": "DigitalHouse",
+    "periodEs": "Agosto 2023 – Abril 2024",
+    "periodEn": "August 2023 – April 2024",
+    "status": "finished",
+    "descriptionEs": "Programa intensivo de programación web Full Stack. Tecnologías: HTML, CSS, JavaScript, React.js, Node.js, Express.js, MySQL y metodologías ágiles.",
+    "descriptionEn": "Intensive Full Stack web programming program. Technologies: HTML, CSS, JavaScript, React.js, Node.js, Express.js, MySQL, and agile methodologies."
+  }
+]

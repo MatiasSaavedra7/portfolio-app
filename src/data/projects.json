@@ -1,0 +1,109 @@
+{
+  "featured": [
+    {
+      "id": "admin-dashboard",
+      "titleEs": "Admin Dashboard",
+      "titleEn": "Admin Dashboard",
+      "descriptionEs": "Aplicación web integral para la gestión de alquileres y soporte técnico de equipos de impresión. Sistema con autenticación RBAC, paneles de métricas y trazabilidad de insumos.",
+      "descriptionEn": "Full-stack web application for rental management and technical support of printing equipment. Includes RBAC authentication, metrics dashboards, and supply traceability.",
+      "tech": ["Node.js", "Express.js", "MySQL", "Socket.IO", "AdminLTE"],
+      "github": "",
+      "demo": "",
+      "image": "/images/admin-dashboard/Inicio.png"
+    },
+    {
+      "id": "ecommerce-platform",
+      "titleEs": "Venner – Wine E-commerce",
+      "titleEn": "Venner – Wine E-commerce",
+      "descriptionEs": "Plataforma de comercio electrónico completa de vinos con dashboard administrativo, carrito de compras, autenticación JWT y API RESTful.",
+      "descriptionEn": "Full wine e-commerce platform with admin dashboard, shopping cart, JWT authentication, and RESTful API.",
+      "tech": ["Node.js", "Express.js", "React", "TypeScript", "PostgreSQL", "JWT"],
+      "github": "https://github.com/MatiasSaavedra7/grupo_4_vinoteca",
+      "demo": "",
+      "image": "/images/e-commerce/e-commerce.jpg"
+    }
+  ],
+  "other": [
+    {
+      "titleEs": "Tasks App",
+      "titleEn": "Tasks App",
+      "descriptionEs": "Aplicación CRUD con autenticación usando el stack MERN.",
+      "descriptionEn": "CRUD application with authentication using the MERN stack.",
+      "tech": ["MongoDB", "Express", "React", "Node.js", "JWT", "Tailwind"],
+      "github": "https://github.com/MatiasSaavedra7/tasks-app",
+      "lang": "TypeScript"
+    },
+    {
+      "titleEs": "Venner Client",
+      "titleEn": "Venner Client",
+      "descriptionEs": "Front-end de e-commerce de vinos con React, Vite, React Router y Tailwind CSS.",
+      "descriptionEn": "E-commerce front-end for wines built with React, Vite, React Router, and Tailwind CSS.",
+      "tech": ["React", "TypeScript", "Vite", "Tailwind", "React Router"],
+      "github": "https://github.com/MatiasSaavedra7/venner-client",
+      "lang": "TypeScript"
+    },
+    {
+      "titleEs": "Venner Server",
+      "titleEn": "Venner Server",
+      "descriptionEs": "API RESTful para el e-commerce Venner. Node.js, Express, TypeScript y PostgreSQL.",
+      "descriptionEn": "RESTful API for the Venner e-commerce. Node.js, Express, TypeScript and PostgreSQL.",
+      "tech": ["Node.js", "Express", "TypeScript", "PostgreSQL", "JWT", "Zod"],
+      "github": "https://github.com/MatiasSaavedra7/venner-server",
+      "lang": "TypeScript"
+    },
+    {
+      "titleEs": "Rick & Morty App",
+      "titleEn": "Rick & Morty App",
+      "descriptionEs": "App para consumir y paginar resultados de la API de Rick and Morty.",
+      "descriptionEn": "App to consume and paginate results from the Rick and Morty API.",
+      "tech": ["React", "TypeScript", "Vite"],
+      "github": "https://github.com/MatiasSaavedra7/rick-morty-app",
+      "lang": "TypeScript"
+    },
+    {
+      "titleEs": "Games App",
+      "titleEn": "Games App",
+      "descriptionEs": "Colección de juegos clásicos (Tic-Tac-Toe, etc.) con React, TypeScript y Tailwind CSS.",
+      "descriptionEn": "Classic games collection (Tic-Tac-Toe, etc.) built with React, TypeScript, and Tailwind CSS.",
+      "tech": ["React", "TypeScript", "Tailwind CSS"],
+      "github": "https://github.com/MatiasSaavedra7/games-app",
+      "lang": "TypeScript"
+    },
+    {
+      "titleEs": "Simple Chat Websocket",
+      "titleEn": "Simple Chat Websocket",
+      "descriptionEs": "Aplicación de chat en tiempo real con apodos, timestamps y contador de usuarios online.",
+      "descriptionEn": "Real-time chat app with nicknames, timestamps, and online user counter.",
+      "tech": ["Node.js", "Socket.IO", "SQLite", "HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/MatiasSaavedra7/simple-chat-websocket",
+      "lang": "JavaScript"
+    },
+    {
+      "titleEs": "Gallery Images App",
+      "titleEn": "Gallery Images App",
+      "descriptionEs": "Galería de imágenes con subida de archivos usando Node.js, Multer y Cloudinary.",
+      "descriptionEn": "Image gallery with file upload using Node.js, Multer, and Cloudinary.",
+      "tech": ["Node.js", "Express", "Multer", "Cloudinary", "Bootstrap"],
+      "github": "https://github.com/MatiasSaavedra7/gallery-images-app",
+      "lang": "JavaScript"
+    },
+    {
+      "titleEs": "Supermarket",
+      "titleEn": "Supermarket",
+      "descriptionEs": "Sistema de gestión para supermercado desarrollado con Java y Spring Boot.",
+      "descriptionEn": "Supermarket management system developed with Java and Spring Boot.",
+      "tech": ["Java", "Spring Boot"],
+      "github": "https://github.com/MatiasSaavedra7/supermarket",
+      "lang": "Java"
+    },
+    {
+      "titleEs": "Vinoteca (Grupo 4)",
+      "titleEn": "Wine Store (Group 4)",
+      "descriptionEs": "Proyecto E-commerce colaborativo: plataforma completa de venta de vinos.",
+      "descriptionEn": "Collaborative E-commerce project: full wine sales platform.",
+      "tech": ["Node.js", "Express.js", "React", "MySQL", "Sequelize"],
+      "github": "https://github.com/MatiasSaavedra7/grupo_4_vinoteca",
+      "lang": "JavaScript"
+    }
+  ]
+}
