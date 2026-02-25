@@ -31,7 +31,8 @@
       "descriptionEn": "CRUD application with authentication using the MERN stack.",
       "tech": ["MongoDB", "Express", "React", "Node.js", "JWT", "Tailwind"],
       "github": "https://github.com/MatiasSaavedra7/tasks-app",
-      "lang": "TypeScript"
+      "lang": "TypeScript",
+      "image": "/images/projects/tasks-app.png"
     },
     {
       "titleEs": "Venner Client",
@@ -40,7 +41,8 @@
       "descriptionEn": "E-commerce front-end for wines built with React, Vite, React Router, and Tailwind CSS.",
       "tech": ["React", "TypeScript", "Vite", "Tailwind", "React Router"],
       "github": "https://github.com/MatiasSaavedra7/venner-client",
-      "lang": "TypeScript"
+      "lang": "TypeScript",
+      "image": "/images/projects/venner-client.png"
     },
     {
       "titleEs": "Venner Server",
@@ -49,7 +51,8 @@
       "descriptionEn": "RESTful API for the Venner e-commerce. Node.js, Express, TypeScript and PostgreSQL.",
       "tech": ["Node.js", "Express", "TypeScript", "PostgreSQL", "JWT", "Zod"],
       "github": "https://github.com/MatiasSaavedra7/venner-server",
-      "lang": "TypeScript"
+      "lang": "TypeScript",
+      "image": "/images/projects/api-placeholder.webp"
     },
     {
       "titleEs": "Rick & Morty App",
@@ -58,7 +61,8 @@
       "descriptionEn": "App to consume and paginate results from the Rick and Morty API.",
       "tech": ["React", "TypeScript", "Vite"],
       "github": "https://github.com/MatiasSaavedra7/rick-morty-app",
-      "lang": "TypeScript"
+      "lang": "TypeScript",
+      "image": "/images/projects/rick-morty-app.png"
     },
     {
       "titleEs": "Games App",
@@ -67,7 +71,8 @@
       "descriptionEn": "Classic games collection (Tic-Tac-Toe, etc.) built with React, TypeScript, and Tailwind CSS.",
       "tech": ["React", "TypeScript", "Tailwind CSS"],
       "github": "https://github.com/MatiasSaavedra7/games-app",
-      "lang": "TypeScript"
+      "lang": "TypeScript",
+      "image": "/images/projects/games-app.png"
     },
     {
       "titleEs": "Simple Chat Websocket",
@@ -76,7 +81,8 @@
       "descriptionEn": "Real-time chat app with nicknames, timestamps, and online user counter.",
       "tech": ["Node.js", "Socket.IO", "SQLite", "HTML", "CSS", "JavaScript"],
       "github": "https://github.com/MatiasSaavedra7/simple-chat-websocket",
-      "lang": "JavaScript"
+      "lang": "JavaScript",
+      "image": "/images/projects/simple-chat-websocket.png"
     },
     {
       "titleEs": "Gallery Images App",
@@ -85,7 +91,8 @@
       "descriptionEn": "Image gallery with file upload using Node.js, Multer, and Cloudinary.",
       "tech": ["Node.js", "Express", "Multer", "Cloudinary", "Bootstrap"],
       "github": "https://github.com/MatiasSaavedra7/gallery-images-app",
-      "lang": "JavaScript"
+      "lang": "JavaScript",
+      "image": "/images/projects/gallery-images-app.png"
     },
     {
       "titleEs": "Supermarket",
@@ -94,7 +101,8 @@
       "descriptionEn": "Supermarket management system developed with Java and Spring Boot.",
       "tech": ["Java", "Spring Boot"],
       "github": "https://github.com/MatiasSaavedra7/supermarket",
-      "lang": "Java"
+      "lang": "Java",
+      "image": "/images/projects/api-placeholder.webp"
     },
     {
       "titleEs": "Vinoteca (Grupo 4)",
@@ -103,7 +111,8 @@
       "descriptionEn": "Collaborative E-commerce project: full wine sales platform.",
       "tech": ["Node.js", "Express.js", "React", "MySQL", "Sequelize"],
       "github": "https://github.com/MatiasSaavedra7/grupo_4_vinoteca",
-      "lang": "JavaScript"
+      "lang": "JavaScript",
+      "image": "/images/projects/api-placeholder.webp"
     }
   ]
 }
