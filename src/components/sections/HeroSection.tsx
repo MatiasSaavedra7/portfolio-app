@@ -59,7 +59,7 @@ export default function HeroSection() {
                 asChild
                 className="rounded-xl bg-transparent"
               >
-                <Link href="/CV-MatiasSaavedra.pdf" target="_blank">
+                <Link href="/MatiasSaavedra_CV.pdf" target="_blank">
                   <Download className="mr-2 h-4 w-4" />
                   {t.hero.downloadCV}
                 </Link>
@@ -99,8 +99,8 @@ export default function HeroSection() {
               <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full p-1 bg-gradient-to-br from-blue-500 via-violet-500 to-cyan-500 shadow-2xl">
                 <div className="w-full h-full rounded-full overflow-hidden bg-muted">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Matías Saavedra"
+                    src="/images/photo.jpg"
+                    alt="Matias Saavedra"
                     width={300}
                     height={300}
                     className="w-full h-full object-cover"
