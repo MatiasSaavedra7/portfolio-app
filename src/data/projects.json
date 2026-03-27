@@ -25,16 +25,6 @@
   ],
   "other": [
     {
-      "titleEs": "Tasks App",
-      "titleEn": "Tasks App",
-      "descriptionEs": "Aplicación CRUD con autenticación usando el stack MERN.",
-      "descriptionEn": "CRUD application with authentication using the MERN stack.",
-      "tech": ["MongoDB", "Express", "React", "Node.js", "JWT", "Tailwind"],
-      "github": "https://github.com/MatiasSaavedra7/tasks-app",
-      "lang": "TypeScript",
-      "image": "/images/projects/tasks-app.png"
-    },
-    {
       "titleEs": "Venner Client",
       "titleEn": "Venner Client",
       "descriptionEs": "Front-end de e-commerce de vinos con React, Vite, React Router y Tailwind CSS.",
@@ -55,6 +45,26 @@
       "image": "/images/projects/api-placeholder.webp"
     },
     {
+      "titleEs": "Spring Boot Notes API",
+      "titleEn": "Spring Boot Notes API",
+      "descriptionEs": "API RESTful para la gestión de notas desarrollada con Java y Spring Boot, Spring Data y Spring Security + JSON Web Tokens y persistencia de datos en PostgreSQL.",
+      "descriptionEn": "RESTful API for note management developed with Java and Spring Boot, Spring Data and Spring Security + JSON Web Tokens and data persistence in PostgreSQL.",
+      "tech": ["Java", "Spring Boot", "Spring Data", "Spring Security", "JWT", "PostgreSQL"],
+      "github": "https://github.com/MatiasSaavedra7/java-notes-api",
+      "lang": "Java",
+      "image": "/images/projects/api-placeholder.webp"
+    },
+    {
+      "titleEs": "NestJS Books API",
+      "titleEn": "NestJS Books API",
+      "descriptionEs": "API RESTful para la gestión de libros desarrollada con NestJS, TypeScript, Passport.js (JWT Strategy) y PostgreSQL.",
+      "descriptionEn": "RESTful API for book management developed with NestJS, TypeScript, Passport.js (JWT Strategy) and PostgreSQL.",
+      "tech": ["NestJS", "TypeScript", "PostgreSQL", "Passport.js", "JWT", "TypeORM"],
+      "github": "https://github.com/MatiasSaavedra7/nest-tutorial",
+      "lang": "TypeScript",
+      "image": "/images/projects/api-placeholder.webp"
+    },
+    {
       "titleEs": "Rick & Morty App",
       "titleEn": "Rick & Morty App",
       "descriptionEs": "App para consumir y paginar resultados de la API de Rick and Morty.",
@@ -63,6 +73,26 @@
       "github": "https://github.com/MatiasSaavedra7/rick-morty-app",
       "lang": "TypeScript",
       "image": "/images/projects/rick-morty-app.png"
+    },
+    {
+      "titleEs": "Tasks App",
+      "titleEn": "Tasks App",
+      "descriptionEs": "Aplicación CRUD con autenticación usando el stack MERN.",
+      "descriptionEn": "CRUD application with authentication using the MERN stack.",
+      "tech": ["MongoDB", "Express", "React", "Node.js", "JWT", "Tailwind"],
+      "github": "https://github.com/MatiasSaavedra7/tasks-app",
+      "lang": "TypeScript",
+      "image": "/images/projects/tasks-app.png"
+    },
+    {
+      "titleEs": "Spring Boot Supermarket API",
+      "titleEn": "Spring Boot Supermarket API",
+      "descriptionEs": "API RESTful para un sistema de gestión de supermercado desarrollado con Java y Spring Boot.",
+      "descriptionEn": "RESTful API for a supermarket management system developed with Java and Spring Boot.",
+      "tech": ["Java", "Spring Boot"],
+      "github": "https://github.com/MatiasSaavedra7/supermarket",
+      "lang": "Java",
+      "image": "/images/projects/api-placeholder.webp"
     },
     {
       "titleEs": "Games App",
@@ -93,16 +123,6 @@
       "github": "https://github.com/MatiasSaavedra7/gallery-images-app",
       "lang": "JavaScript",
       "image": "/images/projects/gallery-images-app.png"
-    },
-    {
-      "titleEs": "Supermarket",
-      "titleEn": "Supermarket",
-      "descriptionEs": "Sistema de gestión para supermercado desarrollado con Java y Spring Boot.",
-      "descriptionEn": "Supermarket management system developed with Java and Spring Boot.",
-      "tech": ["Java", "Spring Boot"],
-      "github": "https://github.com/MatiasSaavedra7/supermarket",
-      "lang": "Java",
-      "image": "/images/projects/api-placeholder.webp"
     },
     {
       "titleEs": "Vinoteca (Grupo 4)",
