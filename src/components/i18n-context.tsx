@@ -14,7 +14,6 @@ interface Translations {
     contact: string
   }
   hero: {
-    greeting: string
     name: string
     role: string
     about: string
@@ -57,9 +56,6 @@ interface Translations {
     emailPlaceholder: string
     messagePlaceholder: string
   }
-  footer: {
-    madeBy: string
-  }
 }
 
 const translations: Record<Lang, Translations> = {
@@ -73,7 +69,6 @@ const translations: Record<Lang, Translations> = {
       contact: "Contacto",
     },
     hero: {
-      greeting: "¡Hola! Soy",
       name: "Matías Saavedra",
       role: "Desarrollador de Software",
       about:
@@ -118,9 +113,7 @@ const translations: Record<Lang, Translations> = {
       emailPlaceholder: "tu@email.com",
       messagePlaceholder: "Cuéntame sobre tu proyecto...",
     },
-    footer: {
-      madeBy: "Hecho con ❤️ por",
-    },
+
   },
   en: {
     nav: {
@@ -132,7 +125,6 @@ const translations: Record<Lang, Translations> = {
       contact: "Contact",
     },
     hero: {
-      greeting: "Hi! I'm",
       name: "Matías Saavedra",
       role: "Software Developer",
       about:
@@ -176,9 +168,6 @@ const translations: Record<Lang, Translations> = {
       namePlaceholder: "Your name",
       emailPlaceholder: "you@email.com",
       messagePlaceholder: "Tell me about your project...",
-    },
-    footer: {
-      madeBy: "Made with ❤️ by",
     },
   },
 }

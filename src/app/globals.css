@@ -1,42 +1,47 @@
 @import "tailwindcss";
 
 @layer base {
+  /* Modo Claro */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --border: 214.3 31.8% 91.4%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --radius: 0.5rem;
+    --background: #F7F5F0;            /* El Papel */
+    --foreground: #1C355E;            /* Tinta Principal */
+    --primary: #1C355E;               /* Tinta Principal (Titulos) */
+    --primary-foreground: #F7F5F0;    /* Texto sobre Fondo Primario */
+    --secondary: #E2E6E8;             /* La Cuadricula (Gris grafito claro */
+    --secondary-foreground: #2B2D2F;  /* Tinta Secundaria (Negro carbón) */
+    --muted: #E2E6E8;                 /* Elementos atenuados */
+    --muted-foreground: #2B2D2F;      /* Tinta Secundaria */
+    --border: #1C355E;                /* Bordes */
+    --card: #FFFFFF;                  /* Tarjetas en blanco  */ 
+    --card-foreground: #2B2D2F;       /* Tinta secundaria sobre tarjetas */
+    --accent: #C83E3D;                /* Correcciones (Rojo lapicera) */
+    --acent-foreground: #FFFFFF;      /* Texto blanco sobre fondo rojo */
+    --radius: 0.5rem;                   /* Radios */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --border: 217.2 32.6% 17.5%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --background: #000000;
+    --foreground: #F1F5F9;
+    --primary: #CBD5E1;
+    --primary-foreground: #1E293B;
+    --secondary: rgba(128, 128, 128, 0.075);
+    --secondary: rgba(128, 128, 128, 0.1);
+    --secondary-foreground: #F1F5F9;
+    --muted: #334155;
+    --muted-foreground: #94A3B8;
+    --border: #94A3B8;
+    --card: #000000;
+    --card-foreground: #F1F5F9;
+    --accent: #F43F5E;
+    --accent-foreground: #FFFFFF;
   }
-
+  
   * {
-    border-color: hsl(var(--border));
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    border-color: var(--border);
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease,
+      color 0.3s ease;
   }
 
   html {
@@ -44,40 +49,99 @@
   }
 
   body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--background);
+    color: var(--foreground);
     margin: 0;
     padding: 0;
-    font-family: var(--font-inter), system-ui, sans-serif;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-outfit), system-ui, sans-serif;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 19px,
+        var(--secondary) 19px,
+        var(--secondary) 20px,
+        transparent 20px,
+        transparent 39px,
+        var(--secondary) 39px,
+        var(--secondary) 40px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 19px,
+        var(--secondary) 19px,
+        var(--secondary) 20px,
+        transparent 20px,
+        transparent 39px,
+        var(--secondary) 39px,
+        var(--secondary) 40px
+      ),
+      radial-gradient(circle at 20px 20px, var(--secondary) 1.6px, transparent 2.1px),
+      radial-gradient(circle at 0px 0px, var(--secondary) 1.2px, transparent 1.7px),
+      radial-gradient(circle at 40px 0px, var(--secondary) 1.2px, transparent 1.7px),
+      radial-gradient(circle at 0px 40px, var(--secondary) 1.2px, transparent 1.7px),
+      radial-gradient(circle at 40px 40px, var(--secondary) 1.2px, transparent 1.7px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
   }
 
-  .bg-background { background-color: hsl(var(--background)); }
-  .text-foreground { color: hsl(var(--foreground)); }
-  .bg-card { background-color: hsl(var(--card)); }
-  .text-card-foreground { color: hsl(var(--card-foreground)); }
-  .bg-primary { background-color: hsl(var(--primary)); }
-  .text-primary-foreground { color: hsl(var(--primary-foreground)); }
-  .bg-secondary { background-color: hsl(var(--secondary)); }
-  .text-secondary-foreground { color: hsl(var(--secondary-foreground)); }
-  .bg-muted { background-color: hsl(var(--muted)); }
-  .text-muted-foreground { color: hsl(var(--muted-foreground)); }
-  .border-border { border-color: hsl(var(--border)); }
+  .bg-background {
+    background-color: var(--background);
+  }
+  .text-foreground {
+    color: var(--foreground);
+  }
+  .bg-card {
+    background-color: var(--card);
+  }
+  .text-card-foreground {
+    color: var(--card-foreground);
+  }
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  .text-primary-foreground {
+    color: var(--primary-foreground);
+  }
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+  .text-secondary-foreground {
+    color: var(--secondary-foreground);
+  }
+  .bg-muted {
+    background-color: var(--muted);
+  }
+  .text-muted-foreground {
+    color: var(--muted-foreground);
+  }
+  .border-border {
+    border-color: var(--border);
+  }
 
-  /* Headings use Outfit */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-outfit), var(--font-inter), system-ui, sans-serif;
-    letter-spacing: -0.02em;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-bodoni);
+    letter-spacing: 0.02em;
   }
 
   /* Scrollbar */
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background-color: hsl(var(--background)); }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--background);
+  }
   ::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--muted-foreground) / 0.3);
+    background-color: var(--muted-foreground);
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(var(--muted-foreground) / 0.5);
+    background-color: var(--muted-foreground);
   }
 }

@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -35,7 +34,7 @@ const AchievementItem = ({ children }: { children: React.ReactNode }) => (
 
 export default function Ecommerce() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
 
       {/* Top bar */}
       <div className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -155,7 +154,6 @@ export default function Ecommerce() {
         </div>
       </section>
 
-      <Footer />
     </div>
   )
 }

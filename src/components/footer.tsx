@@ -53,7 +53,6 @@ export default function Footer() {
           {/* Made by */}
           <div className="text-center text-sm text-muted-foreground space-y-1">
             <p>
-              {t.footer.madeBy}{" "}
               <Link
                 href="https://github.com/MatiasSaavedra7"
                 target="_blank"

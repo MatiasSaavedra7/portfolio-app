@@ -8,7 +8,7 @@ import ContactSection from "@/components/sections/ContactSection"
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
       <Navbar />
       <HeroSection />
       <ExperienceSection />

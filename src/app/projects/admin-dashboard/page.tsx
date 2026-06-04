@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/image-carousel"
@@ -86,7 +85,7 @@ const AchievementItem = ({ children }: { children: React.ReactNode }) => (
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
       {/* <Navbar /> */}
 
       {/* Breadcrumb */}
@@ -247,7 +246,6 @@ export default function Dashboard() {
           <ImageCarousel images={carouselImages} />
         </div>
       </section>
-      <Footer />
     </div>
   )
 }

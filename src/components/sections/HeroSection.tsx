@@ -14,27 +14,29 @@ export default function HeroSection() {
     <section
       id="about"
       className="min-h-screen flex items-center pt-20 pb-16"
-      style={{
-        background:
-          "radial-gradient(ellipse at 70% 50%, hsl(var(--primary)/0.08) 0%, transparent 60%), hsl(var(--background))",
-      }}
+      // style={{
+      //   background:
+      //     "radial-gradient(ellipse at 70% 50%, hsl(var(--primary)/0.08) 0%, transparent 60%), hsl(var(--background))",
+      // }}
     >
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left – Text */}
           <div className="space-y-6 order-2 md:order-1">
+
+            {/* Location */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border/60 bg-muted/30 text-xs text-muted-foreground">
               <MapPin className="h-3 w-3" />
               Santiago del Estero, Argentina
             </div>
 
             <div>
-              <p className="text-muted-foreground text-sm font-medium mb-2 uppercase tracking-widest">
+              {/* <p className="text-muted-foreground text-sm font-medium mb-2 uppercase tracking-widest">
                 {t.hero.greeting}
-              </p>
+              </p> */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-blue-500 via-violet-500 to-cyan-500 bg-clip-text text-transparent">
-                  Matías Saavedra
+                <span className="">
+                  Matias Saavedra
                 </span>{" "}
               </h1>
               <p className="text-xl sm:text-2xl font-semibold text-muted-foreground mt-2">
@@ -42,7 +44,7 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <p className="text-base text-muted-foreground leading-relaxed max-w-lg">
+            <p className="text-base text-muted-foreground leading-relaxed max-w-lg text-justify">
               {t.hero.about}
             </p>
 
@@ -78,7 +80,7 @@ export default function HeroSection() {
                   href={s.href}
                   target={s.href.startsWith("mailto") ? undefined : "_blank"}
                   aria-label={s.label}
-                  className="p-2 rounded-xl border border-border/60 bg-muted/30 hover:bg-muted/70 text-muted-foreground hover:text-foreground transition-all duration-200"
+                  className="p-2 rounded-xl border"
                 >
                   {s.icon}
                 </Link>
@@ -96,7 +98,8 @@ export default function HeroSection() {
                   transform: "scale(1.2)",
                 }}
               />
-              <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full p-1 bg-gradient-to-br from-blue-500 via-violet-500 to-cyan-500 shadow-2xl">
+              {/* <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full p-1 bg-gradient-to-br from-blue-500 via-violet-500 to-cyan-500 shadow-2xl"> */}
+              <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full p-1 bg-primary shadow-2xl">
                 <div className="w-full h-full rounded-full overflow-hidden bg-muted">
                   <Image
                     src="/images/photo.jpg"
