@@ -2,12 +2,12 @@
   {
     "categoryEs": "Lenguajes",
     "categoryEn": "Languages",
-    "tech": "Java, JavaScript (ES6+), TypeScript, Python, SQL"
+    "tech": "Java, C#, JavaScript, TypeScript, Python, SQL"
   },
   {
     "categoryEs": "Front-end",
     "categoryEn": "Front-end",
-    "tech": "React, Next.js, Axios, TailwindCSS, Bootstrap, SCSS"
+    "tech": "HTML, CSS, React, Next.js, Axios, Tailwind, Bootstrap"
   },
   {
     "categoryEs": "Back-end",
@@ -17,11 +17,11 @@
   {
     "categoryEs": "Bases de Datos",
     "categoryEn": "Databases",
-    "tech": "MySQL, PostgreSQL, MongoDB"
+    "tech": "MySQL, PostgreSQL, MongoDB, Supabase"
   },
   {
     "categoryEs": "Herramientas",
     "categoryEn": "Tools",
-    "tech": "Git, Docker, Postman, Jira, Figma"
+    "tech": "Git, GitHub, Docker, Postman, Jira, Trello, Figma, Canva"
   }
 ]
