@@ -15,7 +15,7 @@
     --card: #FFFFFF;                  /* Tarjetas en blanco  */ 
     --card-foreground: #2B2D2F;       /* Tinta secundaria sobre tarjetas */
     --accent: #C83E3D;                /* Correcciones (Rojo lapicera) */
-    --acent-foreground: #FFFFFF;      /* Texto blanco sobre fondo rojo */
+    --accent-foreground: #FFFFFF;     /* Texto blanco sobre fondo rojo */
     --radius: 0.5rem;                   /* Radios */
   }
 
@@ -24,7 +24,6 @@
     --foreground: #F1F5F9;
     --primary: #CBD5E1;
     --primary-foreground: #1E293B;
-    --secondary: rgba(128, 128, 128, 0.075);
     --secondary: rgba(128, 128, 128, 0.1);
     --secondary-foreground: #F1F5F9;
     --muted: #334155;
