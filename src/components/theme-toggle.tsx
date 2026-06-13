@@ -15,7 +15,7 @@ export function ThemeToggle() {
   if (!mounted) {
     return (
       <button className="inline-flex items-center justify-center rounded-md w-10 h-10 cursor-pointer transition-colors text-muted-foreground hover:text-foreground hover:bg-muted/50">
-        <Sun className="h-[1.2rem] w-[1.2rem]" />
+        <Moon className="h-[1.2rem] w-[1.2rem]" />
         <span className="sr-only">Toggle theme</span>
       </button>
     )
