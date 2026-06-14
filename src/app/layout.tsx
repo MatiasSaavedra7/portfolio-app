@@ -13,14 +13,14 @@ const bodoni = Bodoni_Moda({ subsets: ["latin"], variable: "--font-bodoni" })
 
 
 export const metadata: Metadata = {
-  title: "Matías Saavedra – Desarrollador de Software",
+  title: "Matias Saavedra – Desarrollador de Software",
   description:
-    "Portfolio profesional de Matías Saavedra. Desarrollador Full Stack especializado en Java, Node.js, React, Next.js y tecnologías modernas.",
-  keywords: ["desarrollador", "full stack", "frontend", "backend", "react", "nextjs", "javascript", "typescript", "java", "sql", "mysql", "postgresql", "node.js"],
+    "Desarrollador de Software con experiencia en el desarrollo de APIs con Java y Node.js, creacion de interfaces con React y Next.js y construccion de bases de datos SQL y NoSQL",
+  keywords: ["desarrollador", "software", "full stack", "frontend", "backend", "node", "java" ,"react", "next", "javascript", "typescript", "java", "sql", "mysql", "postgresql", "node.js"],
   authors: [{ name: "Matías Saavedra" }],
   openGraph: {
     title: "Matías Saavedra – Desarrollador de Software",
-    description: "Portfolio profesional de desarrollador Full Stack",
+    description: "Portfolio profesional",
     type: "website",
   },
 }
