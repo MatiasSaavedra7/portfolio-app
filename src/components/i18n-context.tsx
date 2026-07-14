@@ -71,8 +71,9 @@ const translations: Record<Lang, Translations> = {
     hero: {
       name: "Matías Saavedra",
       role: "Desarrollador de Software",
-      about:
-        "Especializado en el diseño y construcción de aplicaciones web integrales; desde arquitecturas de servidor sólidas en Java y Node.js, hasta interfaces dinámicas con React y Next.js. Cuento con sólida base técnica en el diseño y desarrollo de bases de datos, lo que me permite estructurar soluciones eficientes y escalables desde el modelado de datos hasta la interfaz final.",
+      // about:
+      //   "Especializado en el diseño y construcción de aplicaciones web integrales; desde arquitecturas de servidor sólidas en Java y Node.js, hasta interfaces dinámicas con React y Next.js. Cuento con sólida base técnica en el diseño y desarrollo de bases de datos, lo que me permite estructurar soluciones eficientes y escalables desde el modelado de datos hasta la interfaz final.",
+      about: "Estudiante de Programador Universitario en Universidad Nacional de Santiago del Estero, me especializo en la creacion de aplicaciones web. En el back-end desarrollo APIs con Node.js y Java. En el front-end construyo interfaces modernas y responsivas con React. Para la gestion de datos trabajo tanto con bases de datos SQL y NoSQL.\nMe gusta transformar ideas en productos digitales funcionales y estoy en constante aprendizaje de nuevas tecnologías y buenas prácticas de desarrollo. Actualmente estoy abierto a nuevos desafíos y oportunidades para seguir creciendo.",
       location: "Santiago del Estero, Argentina",
       contactBtn: "Contáctame",
       downloadCV: "Descargar CV",
@@ -128,7 +129,7 @@ const translations: Record<Lang, Translations> = {
       name: "Matías Saavedra",
       role: "Software Developer",
       about:
-        "Specialized in designing and building full-stack web applications; from solid server architectures in Java and Node.js, to dynamic interfaces with React and Next.js. I have a strong technical background in database design and development, allowing me to structure efficient and scalable solutions from data modeling to the final interface.",
+        "Computer Programming Student at Universidad Nacional de Santiago del Estero. I specialize in building web applications.\nOn the back-end I develop APIs with Node.js and Java. On the front-end I build modern and responsive interfaces with React. For data management I work with both SQL and NoSQL databases.\nI enjoy turning ideas into functional digital products and I’m constantly learning new technologies and development best practices. I’m currently open to new challenges and opportunities to keep growing.",
       location: "Santiago del Estero, Argentina",
       contactBtn: "Contact me",
       downloadCV: "Download CV",

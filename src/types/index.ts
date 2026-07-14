@@ -18,6 +18,7 @@ export interface EducationEntry {
   status: "ongoing" | "finished"
   descriptionEs: string
   descriptionEn: string
+  degreeUrl: string
 }
 
 export interface Project {

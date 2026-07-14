@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center pt-20 pb-16"
+      className="min-h-screen flex items-center pt-16 pb-16"
       // style={{
       //   background:
       //     "radial-gradient(ellipse at 70% 50%, hsl(var(--primary)/0.08) 0%, transparent 60%), hsl(var(--background))",
@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left – Text */}
-          <div className="space-y-6 order-2 md:order-1">
+          <div className="space-y-4 order-2 md:order-1">
 
             {/* Location */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border/60 bg-muted/30 text-xs text-muted-foreground">
@@ -31,24 +31,21 @@ export default function HeroSection() {
             </div>
 
             <div>
-              {/* <p className="text-muted-foreground text-sm font-medium mb-2 uppercase tracking-widest">
-                {t.hero.greeting}
-              </p> */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="">
                   Matias Saavedra
                 </span>{" "}
               </h1>
-              <p className="text-xl sm:text-2xl font-semibold text-muted-foreground mt-2">
+              <p className="text-xl sm:text-2xl font-semibold text-muted-foreground">
                 {t.hero.role}
               </p>
             </div>
 
-            <p className="text-base text-muted-foreground leading-relaxed max-w-lg text-justify">
+            <p className="text-base text-muted-foreground leading-relaxed max-w-lg text-justify whitespace-pre-line">
               {t.hero.about}
             </p>
 
-            <div className="flex flex-wrap gap-3 pt-2">
+            <div className="flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-xl shadow-lg shadow-primary/20">
                 <Link href="#contact">
                   <Send className="mr-2 h-4 w-4" />
@@ -69,7 +66,7 @@ export default function HeroSection() {
             </div>
 
             {/* Social links */}
-            <div className="flex gap-3 pt-1">
+            <div className="flex gap-3">
               {[
                 { href: "https://github.com/MatiasSaavedra7", icon: <Github className="h-5 w-5" />, label: "GitHub" },
                 { href: "https://linkedin.com/in/saavedramatias", icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn" },
@@ -102,7 +99,7 @@ export default function HeroSection() {
               <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full p-1 bg-primary shadow-2xl">
                 <div className="w-full h-full rounded-full overflow-hidden bg-muted">
                   <Image
-                    src="/images/photo.jpg"
+                    src="/images/photo.png"
                     alt="Matias Saavedra"
                     width={300}
                     height={300}

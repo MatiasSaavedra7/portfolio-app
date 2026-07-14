@@ -3,6 +3,7 @@
 import { Calendar } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 import { useI18n } from "@/components/i18n-context"
 import educationData from "@/data/education.json"
 import type { EducationEntry } from "@/types"
@@ -39,7 +40,15 @@ export default function EducationSection() {
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                       <div>
                         <CardTitle className="text-lg">
-                          {lang === "es" ? edu.degreeEs : edu.degreeEn}
+                          {edu.degreeUrl ? (
+                            <Link href={edu.degreeUrl} target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-blue-500 transition-colors">
+                              {lang === "es" ? edu.degreeEs : edu.degreeEn}
+                            </Link>
+                          ) : (
+                            <>
+                              {lang === "es" ? edu.degreeEs : edu.degreeEn}
+                            </>
+                          )}
                         </CardTitle>
                         <p className="text-sm font-medium text-blue-500 mt-1">{edu.institution}</p>
                       </div>
